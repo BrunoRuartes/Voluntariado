@@ -8,8 +8,8 @@
     transition: 0.3s;
 }
 .col-sm img, .col-sm ion-icon {
-    width: 3rem;
-    margin: 0 0.5rem;
+    width: 3rem!important;
+    margin: 0 0.5rem!important;
 }
 
 .col-sm ion-icon:hover {
