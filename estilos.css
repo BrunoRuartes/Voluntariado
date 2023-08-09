@@ -7,5 +7,13 @@
     background-color: #e1ebf7d5!important;
     transition: 0.3s;
 }
+.col-sm img, .col-sm ion-icon {
+    width: 3rem;
+    margin: 0 0.5rem;
+}
 
-  
+.col-sm ion-icon:hover {
+    color: rgb(1, 134, 179);
+    transform: scale(1.5);
+    transition: 0.3s;
+}
