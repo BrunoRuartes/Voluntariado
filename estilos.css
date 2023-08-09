@@ -1,0 +1,11 @@
+.card:hover {
+    background-color: rgba(24, 151, 255, 0.123);
+    border: 1px solid rgb(0, 117, 250);
+    transition: 0.3s;
+}
+.jumbotron:hover{
+    background-color: #e1ebf7d5!important;
+    transition: 0.3s;
+}
+
+  
