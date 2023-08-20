@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="code-oem.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:ital@1&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <header>
@@ -107,7 +108,7 @@
 
             <h2 class="text-center rounded" style="margin-top: 5rem ; font-family: 'Amatic SC', cursive;">¿Y si hago una onda con una cuerda?</h2>
             <p style="margin-bottom: 2rem;" class="text-center">
-                <iframe src="https://www.geogebra.org/calculator/wvktn46d?embed" width="90%" height="200" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;margin-top: 1rem;margin-bottom: 2rem;" frameborder="0"></iframe><br> En el gráfico
+                <iframe id="simGeogebra" src="https://www.geogebra.org/calculator/wvktn46d?embed" width="90%" height="200" style="border: 1px solid #e4e4e4;border-radius: 4px;margin-top: 1rem;margin-bottom: 2rem;" frameborder="0"></iframe><br> En el gráfico
                 podés ver <b style="color: yellow;">una cuerda que se mueve de forma transversal</b> (las partículas se mueven de arriba a abajo mientras la onda avanza). <br><br> Los puntos <b style="color: yellow;">A</b>,<b style="color: yellow;"> B </b>y
                 <b style="color: yellow;"> C</b> no se mueven de su posición horizontal.<br><br> Podemos entender que se desplaza horizontalmente es una energía que usa la cuerda como medio, y las partículas de esa cuerda se quedan quietas en ese eje.
             </p>
@@ -123,8 +124,9 @@
                 <vev style="color: #2e2e2ebd;"> (esta fuerza es causada normalmente por imanes o por corrientes eléctricas)</vev>
                 <br><br>
             </p>
-            <iframe style="width: 100%;" src="https://phet.colorado.edu/sims/cheerpj/faraday/latest/faraday.html?simulation=magnet-and-compass&locale=es" width="800" height="300" allowfullscreen>
+            <iframe id="simPhetIman" style="width: 100%;" src="https://phet.colorado.edu/sims/cheerpj/faraday/latest/faraday.html?simulation=magnet-and-compass&locale=es" width="800" height="300" allowfullscreen>
 </iframe>
+            <button class="btn-primary btn" onclick="toggleFullScreen(document.querySelector('#simPhetIman'))">Pantalla completa</button>
 
 
             <p style="margin-bottom: 2rem; padding: 1rem; background-color: #a1adb86b;" class="text-center rounded"><span class="material-icons rounded-circle" style="color: #d2dde7d5;padding: 0.5rem; margin: 0.5rem; background-color: rgba(44, 58, 85, 0.562);">menu_book</span><br> Un campo eléctrico es similar, pero en lugar de ser causado por imanes o
