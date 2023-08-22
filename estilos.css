@@ -4,6 +4,11 @@
     transition: 0.3s;
 }
 
+.jumbotron:hover {
+    background-color: #e1ebf7d5;
+    transition: 0.3s;
+}
+
 .col-sm img,
 .col-sm ion-icon {
     width: 3rem!important;
