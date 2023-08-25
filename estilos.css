@@ -19,3 +19,16 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
+
+.list-group-item-custom {
+    background-color: blue;
+    border: 1px solid white;
+    color: white;
+}
+
+.list-group-item-custom:hover,
+.list-group-item-custom:focus,
+.list-group-item-custom.active {
+    background-color: blue;
+    border: none;
+}
