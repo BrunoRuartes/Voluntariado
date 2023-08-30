@@ -30,6 +30,7 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="code-oem.js"></script>
 
 </head>
 
@@ -216,6 +217,34 @@
                     style="stroke: none; fill: rgb(0, 103, 194);"></path>
             </svg></div>
 
+        <!-- ========================== SIMULACION ==========================-->
+        <div>
+            <h4 style="margin-bottom: 2rem ;font-family: 'Josefin Sans', sans-serif; margin-top: 2rem;">¿Te gustaría simularlo?</h4>
+            
+        <iframe id="simPhetIman" style="display: none; width: 100%;" src="https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_es.html" width="800" height="600" allowfullscreen>
+        </iframe>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+
+                        <span style="color: #d2dde7d5;padding: 0.5rem; margin: 0.5rem; background-color: rgba(185, 2, 2, 0.651);" class="material-icons rounded-circle">
+                            rotate_right
+                            </span>
+                        <p>¡Gira tu celular y ponelo en horizontal primero!</p>
+                    </div>
+                    <div class="col-sm">
+                        <span style="color: #d2dde7d5;padding: 0.5rem; margin: 0.5rem; background-color: rgba(185, 2, 2, 0.651);" class="material-icons rounded-circle">
+                            explore
+                            </span>
+                        <p><b style="color: #e60000de;">La brújula en un campo magnético permite ver la dirección de la fuerza del campo</b>, apunta siempre al norte <br>¡Como lo haria con el polo norte de la tierra!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-danger" onclick="toggleFullScreen(document.querySelector('#simPhetIman'))">Ver simulacion</button>
+        </div>
+        </div>
+
         <!-- ========================== REPLICAR EXPERIMENTO ==========================-->
 
         <h4 style="margin-bottom: 2rem ;font-family: 'Josefin Sans', sans-serif; margin-top: 2rem;">¡Podes experimentarlo vos mismo!</h4>
@@ -310,7 +339,7 @@
         <hr>
 
         <h4 style="font-family: 'Josefin Sans', sans-serif; margin-top: 5rem;">¿Qué deberíamos obtener?</h4>
-        <p>
+        <p style="padding: 1rem;">
             Dependiendo de la forma que tengan tus electrodos, vas a poder simular las distintas distribuciones de campo eléctrico, <br><br>
             Dos de las más comunes:
         </p>
