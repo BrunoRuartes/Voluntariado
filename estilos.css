@@ -24,6 +24,10 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 249, 0.664)!important;
+}
+
 #progress-bar {
     position: fixed;
     top: 0;
