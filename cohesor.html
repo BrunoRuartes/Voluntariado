@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060D36">
+
+    <title>Detector de ondas electromagnéticas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/img/png-transparent-atom-ico-symbol-icon-chemistry-atom-s-angle-symmetry-rim.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&family=Kanit:ital@1&family=Roboto:ital,wght@0,500;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="codigo-index.js"></script>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002042;">
+        <a class="navbar-brand" href="index.html"><img class="rounded-circle border border-secondary"
+                style="width: 3rem; height: 3rem;"
+                src="https://www.catamarcactual.com.ar/u/fotografias/fotosnoticias/2015/3/16/53688.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Teoría
+                    </a>
+                    <div class="dropdown-menu navbar-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ele-y-mag.html">Electricidad y Magentismo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="oem.html">Ondas electromagnéticas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Experimentos
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cohesor.html">Cohesor</a>
+                        <a class="dropdown-item active" href="detector-oem.html">Detector de ondas electromagnéticas</a>
+                        <a class="dropdown-item" href="lin-camp-ele.html">Lineas de campo eléctrico</a>
+                        <a class="dropdown-item" href="lin-camp-mag.html">Lineas de campo magnpetico </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- HTML -->
+    <div id="progress-bar"></div>
+</header>
+
+
+<body>
+    <!-- BIENVENIDA -->
+    <div
+        style="background-image: url(https://media.istockphoto.com/id/1291343894/es/foto/telecomunicaciones-m%C3%A1stil-de-antenas-de-televisi%C3%B3n-tecnolog%C3%ADa-inal%C3%A1mbrica.jpg?s=612x612&w=0&k=20&c=_9rBGRxOpHMkWfWohJ9ywhFHzRQTL2OYUjlb1VV6JT4=);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div class="jumbotron" style="margin: 2rem; background-color: #e9ecefdb;">
+            <h1 class="display-4">Detector de ondas electro<br>magnéticas</h1>
+            <p class="lead"> <b>¿Como podrias detectar las ondas electromagnéticas?</p>
+            <hr class="my-4">
+            <p>¿Te gustaría saber cómo luce un campo eléctrico?<br><br> En esta página web vas a encontrar un
+                experimento con materiales sencillos para responder esa pregunta</p>
+
+            <p class="lead text-center">
+                <br>
+                <a class="btn btn-primary btn-lg" href="#bienvenida" role="button">Ver más</a>
+            </p>
+        </div>
+
+    </div>
+    <hr style="margin: 2rem;">
+
+    <!-- EXPERIMENTO-->
+    <div
+        style="padding-top: 1rem; padding-bottom: 1rem;background-image: url(https://www.fisicalab.com/sites/all/files/contenidos/luz/sintesis-electromagnetica.jpg);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div style="background-color: rgba(255, 255, 255, 0.781); padding: 4rem;">
+            <h2 id="bienvenida"> Experimento</h2>
+
+            <p> El objetivo es averiguar cómo funcionan los campos electromagnéticos y las ondas.
+                Vamos a medir su fuerza desde lejos y ver cómo se generan a través de la fricción o la inducción.</p>
+
+            <br>
+            <h2>Diseño del detector</h2>
+            <p> Esta pagina describe un diseño de detector que es muy sensible a los campos electromagnéticos o posibles
+                interferencias que pueden ser emitidas por electrodomésticos, transformadores, equipos de música,
+                radios, televisores y cualquier aparato electrónico que tenga una oscilación.<br><br> El detector
+                utiliza LEDs
+                de diferentes colores, desde más fríos a más cálidos, y un buzzer activo para indicar la intensidad del
+                campo o interferencia que se está analizando, tanto en términos de frecuencia auditiva como lumínica.
+
+
+            </p>
+        </div>
+
+    </div>
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+    <!-- MATERIALES-->
+    <div>
+        <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">¿Qué vas a necesitar?</h3>
+
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Componentes
+                <span class="badge badge-primary badge-pill">BC 5478</span>
+                <span class="badge badge-primary badge-pill">BC 558</span>
+                <span class="badge badge-primary badge-pill">BC 547</span>
+                <span class="badge badge-primary badge-pill">LM 3914</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Resistencias
+                <span class="badge badge-primary badge-pill">220 Ω</span>
+                <span class="badge badge-primary badge-pill">4k7 Ω</span>
+                <span class="badge badge-primary badge-pill">1k Ω</span>
+                <span class="badge badge-primary badge-pill">100k Ω</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                LEDs
+                <span class="badge badge-primary badge-pill">Rojo</span>
+                <span class="badge badge-primary badge-pill">Verde</span>
+                <span class="badge badge-primary badge-pill">Amarillo</span>
+                <span class="badge badge-primary badge-pill">Naranja</span>
+                <span class="badge badge-primary badge-pill">Azul</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Alimentación
+                <span class="badge badge-primary badge-pill">Batería 9v con conector</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Placa de cobre perforada 10x10
+                <span class="badge badge-primary badge-pill">1</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+
+    <!-- PROCEDIMIENTO -->
+    <div style="padding-bottom: 2rem;">
+
+        <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">Procedimiento</h3>
+        <div class="row">
+
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Paso 1</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="profile">Paso 2</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="messages">Paso 3</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="settings">Paso 4</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-home1" role="tab" aria-controls="home1">Paso 5</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-profile1" role="tab" aria-controls="profile1">Paso 6</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages1" role="tab" aria-controls="messages1">Paso 7</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-home2" role="tab" aria-controls="home2">Paso 8</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-profile2" role="tab" aria-controls="profile">Paso 9</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages2" role="tab" aria-controls="messages">Paso 10</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                        href="#list-home3" role="tab" aria-controls="settings">Paso 11</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-profile3" role="tab" aria-controls="home1">Paso 12</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages3" role="tab" aria-controls="messages1">Diagrama</a>
+                </div>
+            </div>
+
+
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <p> Conectar en los puertos 1, 18, 17, 16 y 15 del circuito integrado LM 3914 los leds de color
+                            Rojo, Naranja, Amarillo, Verde y Azul respectivamente</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p>En el puerto 3 y 9 Conectar la batería 9v con su conector
+                        </p>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p>En el puerto 10 conectar el diodo 1N4148 seguido de una resistencia de 1K Ω y seguido de una
+                            conexión del transistor BC558 que conecta el zumbador activo y el puerto 9
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <p>En el puerto 7 conectar una resistencia de 100K Ω y luego conectar la resistencia en serie
+                            con una resistencia de 1K Ω que se conecta también al puerto 6, esta ultima conectarla al
+                            transistor BC547
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="list-home1" role="tabpanel" aria-labelledby="list-home-list">
+                        <p> Conectar puerto 2, 4, 8 y el zumbador activo al mismo transistor de la resistencia del
+                            puerto 6
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile1" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p>Conectar la placa de cobre perforada a un transistor BC547
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-messages1" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p>
+                            Conectar el transistor BC547 de un lado directo a la pila 9V y del otro a un segundo
+                            transistor BC547
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+                        <p> Conectar el segundo transistor BC457 de un lado a una resistencia de 220 Ω y del otro lado
+                            en paralelo al transistor BC457 que conecta con los puertos 2, 4, 8 y al zumbador activo</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p>Conectar en paralelo la resistencia de 220 Ω con otra resistencia de 100K Ω (que debe
+                            conectarse a la línea de la pila 9V) y con un transistor BC557
+                        </p>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-messages2" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p>Conectar el transistor BC557 de un lado a la línea de la pila 9V y del otro lado a una
+                            resistencia de 1K Ω que se conectara al transistor BC547 que esta conectado al puerto 2, 4,
+                            8 y al zumbador activo
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-settings2" role="tabpanel" aria-labelledby="list-settings-list">
+                        <p>11. Conectar este Transistor BC457 del otro lado a una resistencia de 4K7 Ω que se conectara
+                            en paralelo a otra resistencia de 100K Ω (que debe conectarse en la línea de la pila 9V) y a
+                            un transistor BC557
+                        </p>
+                        <!---->
+                    </div>
+                    <div class="tab-pane fade" id="list-home3" role="tabpanel" aria-labelledby="list-home-list">
+                        <p> Conectar este Transistor BC457 del otro lado a una resistencia de 4K7 Ω que se conectara en
+                            paralelo a otra resistencia de 100K Ω (que debe conectarse en la línea de la pila 9V) y a un
+                            transistor BC557
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile3" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p>Conectar el ultimo transistor BC557 de un lado a la línea de la pila 9V y del otro lado al
+                            puerto 5
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-messages3" role="tabpanel" aria-labelledby="list-profile-list">
+                        <img src="/img/img-circuito.png" style="width: 100%;" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+
+    <!--QUERES SABER MAS-->
+    <div
+        style="padding-top: 1rem; padding-bottom: 1rem;background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFf8xgy1BJBkag0Ab3qyW_gSNSiEuS79FpgA&usqp=CAU);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div style="background-color: rgba(255, 255, 255, 0.781); padding: 2rem;">
+            <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">¿Querés saber más de ondas?
+            </h3>
+            <p class="lead text-center">
+                <br>
+                <a class="btn btn-dark btn-lg" href="oem.html" role="button">¡Animate a explorar!</a>
+            </p>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer
+        style="background-color: #002042; text-align: center; padding-top: 1rem; padding-bottom: 1rem; color: #f0f0f0;">
+        <hr style="border-color: #f0f0f0; width: 80%;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h5>Universidad Nacional de Catamarca</h5><br>
+                </div>
+                <div class="col-sm">
+                    <h6>Facultad de Tecnología y Ciencias Aplicadas</h6>
+                    <p style="font-size: small;">Departamento de Formación Básica</p>
+                    <p>INTEGRANTES:<br>
+                        Bruno Ruartes<br>
+                        Solange Evelyn Avila 
+
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://www.instagram.com/ufixcatamarca/"><img style="width: 3rem;"
+                            src="https://ufixcatamarca.netlify.app/img/logo%20BR.svg" alt=""></a>
+
+                    <a href="https://www.facebook.com/FTyCA/?locale=es_LA">
+                        <ion-icon class="iconos" style="width: 3rem;" name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/ftca.unca/">
+                        <ion-icon class="iconos" style="width: 3rem;" name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.instagram.com/ftca.unca/"><ion-icon class="iconos" style="width: 3rem;"
+                            name="logo-whatsapp"></ion-icon></a>
+                    <a href="http://tecno.unca.edu.ar/"><img class="rounded-circle border border-secondary"
+                            style="height: 2rem; width: 2rem!important;"
+                            src="https://www.catamarcactual.com.ar/u/fotografias/fotosnoticias/2015/3/16/53688.jpg"
+                            alt=""></a>
+
+                </div>
+            </div>
+        </div>
+        <hr style="border-color: #a5a5a5; width: 50%;">
+        <small style="color: #a5a5a5;">2023 © <a style="color: #a5a5a5;"
+                href="https://www.instagram.com/brunoruartes/">Ruartes Bruno.</a></small>
+    </footer>
+</body>
+
+
+</html>
