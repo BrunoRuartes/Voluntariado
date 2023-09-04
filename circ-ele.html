@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060D36">
+
+    <title>Circuitos eléctricos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/img/png-transparent-atom-ico-symbol-icon-chemistry-atom-s-angle-symmetry-rim.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@500&family=Kanit:ital@1&family=Roboto:ital,wght@0,500;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="codigo-index.js"></script>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002042;">
+        <a class="navbar-brand" href="index.html"><img class="rounded-circle border border-secondary"
+                style="width: 3rem; height: 3rem;"
+                src="https://www.catamarcactual.com.ar/u/fotografias/fotosnoticias/2015/3/16/53688.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Teoría
+                    </a>
+                    <div class="dropdown-menu navbar-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ele-y-mag.html">Electricidad y Magentismo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="oem.html">Ondas electromagnéticas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Experimentos
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active" href="circ-ele.html">Circuitos Eléctricos</a>
+                        <a class="dropdown-item" href="cohesor.html">Cohesor</a>
+                        <a class="dropdown-item" href="detector-oem.html">Detector de ondas electromagnéticas</a>
+                        <a class="dropdown-item" href="lin-camp-ele.html">Lineas de campo eléctrico</a>
+                        <a class="dropdown-item" href="lin-camp-mag.html">Lineas de campo magnpetico </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- HTML -->
+    <div id="progress-bar"></div>
+</header>
+
+
+<body>
+    <!-- BIENVENIDA -->
+    <div
+        style="background-image: url(https://resources.altium.com/sites/default/files/doc_import/LC6a4sG07wZ3uDMTTt2pWE_mn0xZSOpIb4yxsNfsnlEYJLH4IRwhe2JrKqXgqLVKwjWSFXRYQpSjERz1Pqojbd43Aelo-DaABMb9abu3LysJpjlKRyo_wOq1acasS9Kwq1spLqPmdCMMhHgFfw.jpg);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div class="jumbotron" style="margin: 2rem; background-color: #e9ecefa4;">
+            <h1 class="display-4">Circuitos <br>eléctricos</h1>
+            <p class="lead"> <b>¿Qué es la electricidad y que tipos de conexiones hay?</p>
+            <hr class="my-4">
+            <p>¿Te gustaría saber aprender a manejar un multímetro?<br><br> En esta página web vas a encontrar un
+                experimento con materiales sencillos para responder esa pregunta y muchas más</p>
+
+            <p class="lead text-center">
+                <br>
+                <a class="btn btn-primary btn-lg" href="#bienvenida" role="button">Ver más</a>
+            </p>
+        </div>
+
+    </div>
+    <hr style="margin: 2rem;">
+
+    <!-- EXPERIMENTO-->
+    <div
+        style="padding-top: 1rem; padding-bottom: 1rem;background-image: url(https://geekelectronica.com/wp-content/uploads/2016/03/Ejemplo-2BSerie.jpg);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div style="background-color: rgba(255, 255, 255, 0.781); padding: 4rem;">
+            <h2 id="bienvenida"> Experimento</h2>
+
+            <p> Los componentes de un circuito eléctrico se pueden conectar de distintas
+                maneras. En función a como estén conectados distinguimos: <b style="color: rgb(177, 0, 0);">Circuito
+                    serie, paralelo y mixto</b>.</p>
+
+            <br>
+            <h2>¿Qué es la electricidad y qué es un circuito?</h2>
+            <p> La electricidad es una fuerza que resulta de la interacción entre cargas eléctricas positivas y
+                negativas.<br><br> <b style="color: rgb(177, 0, 0);">Un circuito es una interconexión de componentes
+                    eléctricos</b> (como baterías,
+                resistores, inductores, capacitores, interruptores, transistores, entre otros) <b
+                    style="color: rgb(177, 0, 0);">que transportan la
+                    corriente eléctrica a través de una trayectoria cerrada</b>. Un circuito eléctrico es una red
+                formada por
+                un bucle cerrado, que ofrece una vía de retorno para la corriente
+
+
+            </p>
+        </div>
+
+    </div>
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+    <!-- MATERIALES-->
+    <div>
+        <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">¿Qué vas a necesitar?</h3>
+
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cables y entradas de prueba
+                <span class="badge badge-primary badge-pill">Varias</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Fuente de 0 a 12 volts
+                <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                LEDs
+                <span class="badge badge-primary badge-pill">Varios</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+
+    <!-- PROCEDIMIENTO -->
+    <div style="padding-bottom: 2rem;">
+
+        <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">Procedimiento</h3>
+        <div class="row">
+
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Circuito Serie</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="profile">Circuito Paralelo</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="messages">Circuito Mixto</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="settings">Motor CD</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-home1" role="tab" aria-controls="home1">Multimetro Voltaje</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                        href="#list-profile1" role="tab" aria-controls="profile1">Multimetro Corriente</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages1" role="tab" aria-controls="messages1">Medir Resistencias</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-home2" role="tab" aria-controls="home2">Medir Continuidad</a>
+                </div>
+            </div>
+
+
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <p><u> Circuito serie:</u><br><br> para conectar los elementos en serie en un circuito los
+                            componentes eléctricos (baterías, resistencias, lámparas, etc.) se
+                            conectan uno a continuación del otro (de negativo a positivo), de manera
+                            que existe un único camino cerrado para la corriente.
+                            <img style="width: 100%;"
+                                src="https://www.areatecnologia.com/electricidad/imagenes/partes-circuitos-electricos.jpg"
+                                alt="">
+                            Si uno de los componentes tiene una avería, como una bombilla que se
+                            funde, la corriente no puede circular y ninguno de los demás elementos
+                            del circuito funciona
+                        </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p><u>Circuito paralelo:</u> <br><br>La conexión en paralelo o circuito paralelo es aquel que
+                            los elementos están colocados de manera que sus extremos estén
+                            conectados a puntos comunes, (positivo - positivo y negativo - negativo)
+                        </p><br>
+                        <img style="width: 100%;"
+                            src="https://1.bp.blogspot.com/-Gpy9AoEC5CU/Tl_KVbPucQI/AAAAAAAAAAQ/1r290fnzOn4/s1600/Circuito6.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p><u>Circuito mixto:</u> Para la conexión de un circuito mixto se deben combinar
+                            las dos conexiones anteriores (serie y en paralelo).
+                        </p>
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <p><u>Partes de un motor:</u>
+                            Para hacer funcionar un motor Conectamos las terminales (positivas y negativas) a una batería
+                            o fuente eléctrica, <br><br>
+                            <img style="width: 100%;" src="https://www.mundodelmotor.net/wp-content/uploads/2022/05/Partes-de-un-Motor-CC-corriente-continua.jpg" alt="">
+                            <br><br>
+                            Para cambiar el sentido de giro de un motor se debe de invertir la polaridad de sus terminales 
+                            con respecto a la batería o fuente.<br><br>
+                            <img style="width: 100%;" src="https://www.areatecnologia.com/mecanismos/imagenes/giro-moto-cc.jpg" alt="">
+                            En una posición de conexión de los terminales gira en un sentido, cuando cambiamos la 
+                            conexión, gira en sentido contrario.
+                            
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="list-home1" role="tabpanel" aria-labelledby="list-home-list">
+                        <p> Los multímetros son una herramienta fundamental para cualquiera que requiera medir 
+                            variables eléctricas
+                        </p><br><br>
+                        <img style="width: 100%;" src="https://electropreguntas.com/wp-content/uploads/2023/04/como-se-usa-un-multimetro-para-medir-la-tension.jpg.webp" alt="">
+                        
+
+                    </div>
+                    <div class="tab-pane fade" id="list-profile1" role="tabpanel" aria-labelledby="list-profile-list">
+                        <img style="width: 100%;" src="https://electropreguntas.com/wp-content/uploads/2023/04/como-se-usa-un-multimetro-para-medir-la-corriente.jpg.webp" alt="">
+
+                    </div>
+                    <div class="tab-pane fade" id="list-messages1" role="tabpanel" aria-labelledby="list-profile-list">
+                        <img style="width: 100%;" src="https://electropreguntas.com/wp-content/uploads/2023/04/cuando-se-debe-usar-un-multimetro-de-resistencia.jpg" alt="">
+
+                    </div>
+                    <div class="tab-pane fade" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+                        <img style="width: 100%;" src="https://electropreguntas.com/wp-content/uploads/2023/04/como-se-mide-la-continuidad-con-un-multimetro.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #d8d8d8;padding-bottom: 2rem;">
+    </div>
+
+    <!--QUERES SABER MAS-->
+    <div
+        style="padding-top: 1rem; padding-bottom: 1rem;background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFf8xgy1BJBkag0Ab3qyW_gSNSiEuS79FpgA&usqp=CAU);  height: 100%; width: 100%; padding-top: 2rem; padding-bottom: 2rem; background-size: cover;">
+        <div style="background-color: rgba(255, 255, 255, 0.781); padding: 2rem;">
+            <h3 style="text-align: center; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem;">¿Querés saber más de
+                ondas?
+            </h3>
+            <p class="lead text-center">
+                <br>
+                <a class="btn btn-dark btn-lg" href="oem.html" role="button">¡Animate a explorar!</a>
+            </p>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer
+        style="background-color: #002042; text-align: center; padding-top: 1rem; padding-bottom: 1rem; color: #f0f0f0;">
+        <hr style="border-color: #f0f0f0; width: 80%;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h5>Universidad Nacional de Catamarca</h5><br>
+                </div>
+                <div class="col-sm">
+                    <h6>Facultad de Tecnología y Ciencias Aplicadas</h6>
+                    <p style="font-size: small;">Departamento de Formación Básica</p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://www.instagram.com/ufixcatamarca/"><img style="width: 3rem;"
+                            src="https://ufixcatamarca.netlify.app/img/logo%20BR.svg" alt=""></a>
+
+                    <a href="https://www.facebook.com/FTyCA/?locale=es_LA">
+                        <ion-icon class="iconos" style="width: 3rem;" name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/ftca.unca/">
+                        <ion-icon class="iconos" style="width: 3rem;" name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.instagram.com/ftca.unca/"><ion-icon class="iconos" style="width: 3rem;"
+                            name="logo-whatsapp"></ion-icon></a>
+                    <a href="http://tecno.unca.edu.ar/"><img class="rounded-circle border border-secondary"
+                            style="height: 2rem; width: 2rem!important;"
+                            src="https://www.catamarcactual.com.ar/u/fotografias/fotosnoticias/2015/3/16/53688.jpg"
+                            alt=""></a>
+
+                </div>
+            </div>
+        </div>
+        <hr style="border-color: #a5a5a5; width: 50%;">
+        <small style="color: #a5a5a5;">2023 © <a style="color: #a5a5a5;"
+                href="https://www.instagram.com/brunoruartes/">Ruartes Bruno.</a></small>
+    </footer>
+</body>
+
+
+</html>
